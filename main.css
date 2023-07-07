@@ -1,0 +1,81 @@
+html, 
+body, 
+header, 
+div {
+    margin: 0;
+    padding: 0;
+}
+html, 
+body {
+    height: 100%;
+    background: #eee;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+#mode-wrapper {
+    flex: 1;
+}
+
+.dark-mode {
+    background: #2b2b2b;
+    color: #fff;
+}
+
+header {
+    padding: 1rem 0 0 2rem;
+}
+
+h1 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    width: 3rem;
+    overflow: visible;
+}
+
+.dark-mode h1 {
+    border-color: white;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 4rem 5px 2rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    background: #fff;
+    box-shadow: .25px .25px 3px .25px #cecece;
+    font-size: 20px;
+}
+
+.dark-mode .flex-row {
+    background: #424242;
+}
+
+.item-price,
+.item-name,
+.item-details {
+    flex-basis: 33%;
+}
+
+#toggle-mode {
+    margin-left: 2rem;
+}
+
+input[type=button] {
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+    border: 1px solid #686868;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.dark-mode input[type=button] {
+    color: #fff;
+    background: #2b2b2b;
+    border-color: #fff;
+}
